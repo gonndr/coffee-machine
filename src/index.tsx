@@ -5,7 +5,8 @@ import App from "./App";
 import "./index.sass";
 import theme from "./theme";
 
-const root = ReactDOM.createRoot(document.getElementById("app") as HTMLElement);
+const rootElement = document.getElementById("app");
+const root = ReactDOM.createRoot(rootElement!);
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>

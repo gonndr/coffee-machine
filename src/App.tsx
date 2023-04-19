@@ -8,7 +8,7 @@ import "@fontsource/roboto/700.css";
 
 import twitterIcon from "@assets/twitter.svg";
 import Page1 from "@components/routes/Page1";
-import Page2 from "./components/Routes/Page2";
+import Page2 from "@components/routes/Page1";
 
 const App: FC = () => {
   return (

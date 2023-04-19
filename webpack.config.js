@@ -24,8 +24,20 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        use: "babel-loader",
+        test: /\.(ts(x?))$/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: { presets: [["@babel/preset-env", { targets: "ie 11" }]] },
+          },
+          {
+            loader: "ts-loader",
+            options: {
+              onlyCompileBundledFiles: true,
+              compilerOptions: { noEmit: false },
+            },
+          },
+        ],
         exclude: /node_modules/,
       },
       {

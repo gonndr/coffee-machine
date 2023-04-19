@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import env from '@env';
+// import env from "@env/index";
 
-console.log({ env });
+// console.log({ env });
 
 export default function Page1() {
-    return <>
-        <p>Page1</p>
+  return (
+    <>
+      <p>Page1</p>
 
-        <pre>{ JSON.stringify(env, null, 2) } </pre>
-
-    </>;
+      {/* <pre>{JSON.stringify(env, null, 2)} </pre> */}
+    </>
+  );
 }
